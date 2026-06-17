@@ -1041,7 +1041,7 @@
       background: #dbeafe;
     }
 
-    .gallery-image::after {
+/*    .gallery-image::after {
       content: "Klik untuk preview";
       position: absolute;
       inset: auto 16px 16px 16px;
@@ -1055,7 +1055,7 @@
       opacity: 0;
       transition: var(--transition);
       text-align: center;
-    }
+    }*/
 
     .gallery-card:hover .gallery-image::after {
       transform: translateY(0);
@@ -1505,73 +1505,63 @@
           <div class="accordion reveal" aria-label="Accordion analisis artefak">
             <article class="accordion-item active">
               <button class="accordion-trigger" type="button">
-                <span>⚠️ Kendala Penyusunan Produk Pembelajaran</span>
+                <span>⚠️ Kendala yang terjadi selama proses penyusunan produk pembelajaran</span>
                 <span class="accordion-icon">+</span>
               </button>
               <div class="accordion-content">
                 <div class="accordion-content-inner">
-                  <p>Beberapa kendala yang muncul antara lain penyesuaian modul ajar dengan karakteristik peserta didik, keterbatasan waktu dalam menyusun media, variasi kemampuan belajar peserta didik, serta kebutuhan mengintegrasikan asesmen yang sesuai dengan tujuan pembelajaran.</p>
+                  <p>Dalam proses penyusunan produk pembelajaran (modul ajar), kendala yang dihadapi yaitu menyelaraskan tujuan pembelajaran, aktivitas pembelajaran, dan asesmen pembelajaran.</p>
                 </div>
               </div>
             </article>
 
             <article class="accordion-item">
               <button class="accordion-trigger" type="button">
-                <span>📘 Teori atau Konsep Pedagogi</span>
+                <span>📘 Teori atau konsep pedagogi yang diadopsi dalam penyusunan produk pembelajaran</span>
                 <span class="accordion-icon">+</span>
               </button>
               <div class="accordion-content">
                 <div class="accordion-content-inner">
-                  <p>Produk pembelajaran mengadopsi prinsip pembelajaran berdiferensiasi, pembelajaran berpusat pada peserta didik, pendekatan konstruktivisme, asesmen formatif, serta penguatan Profil Pelajar Pancasila dalam aktivitas kelas.</p>
+                  <p>Konsep pedagogi yang digunakan adalah pembelajaran yang berpusat pada murid dengan menggunakan model Problem Based Learning (PBL), metode diskusi, dan pendekatan Deep Learning.</p>
                 </div>
               </div>
             </article>
 
             <article class="accordion-item">
               <button class="accordion-trigger" type="button">
-                <span>✅ Faktor Keberhasilan Penerapan</span>
+                <span>✅ Faktor keberhasilan penerapan produk pembelajaran</span>
                 <span class="accordion-icon">+</span>
               </button>
               <div class="accordion-content">
                 <div class="accordion-content-inner">
-                  <p>Keberhasilan penerapan produk pembelajaran dipengaruhi oleh kesiapan perangkat ajar, keterlibatan peserta didik, dukungan guru pamong dan DPL, pengelolaan kelas yang efektif, serta penggunaan media pembelajaran yang relevan dan menarik.</p>
+                  <p>Keberhasilan penerapan produk pembelajaran dipengaruhi oleh keterlibatan murid, pengelolaan kelas, serta penggunaan media pembelajaran yang relevan dan menarik.</p>
                 </div>
               </div>
             </article>
 
             <article class="accordion-item">
               <button class="accordion-trigger" type="button">
-                <span>🔄 Perubahan untuk Situasi Kelas Berbeda</span>
+                <span>🔄 Perubahan beberapa komponen atau bagian yang memungkinkan untuk situasi kelas yang berbeda</span>
                 <span class="accordion-icon">+</span>
               </button>
               <div class="accordion-content">
                 <div class="accordion-content-inner">
-                  <p>Beberapa komponen yang dapat disesuaikan meliputi alokasi waktu, strategi pengelompokan, tingkat kesulitan LKPD, variasi media, bentuk asesmen, serta pendekatan pendampingan bagi peserta didik dengan kebutuhan belajar yang beragam.</p>
+                  <p>Komponen atau bagian yang dapat disesuaikan adalah guru harus mampu menyajikan materi dengan beragam cara (representasi) sesuai dengan kebutuhan dan gaya belajar murid.</p>
                 </div>
               </div>
             </article>
           </div>
 
           <div class="upload-panel card reveal">
-            <h3 style="color: var(--navy); margin-bottom: 16px;">Unggah Dokumen Artefak</h3>
+            <h3 style="color: var(--navy); margin-bottom: 16px;">Dokumen Artefak Pembelajaran</h3>
             <div class="upload-grid">
               <label class="upload-box">
-                <input class="upload-input" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.jpeg,.png" data-file-label="modulFile" />
                 <div class="upload-icon">📄</div>
-                <h3>Upload Modul Ajar</h3>
-                <p>Drag-and-drop atau klik untuk memilih file. Format: PDF, DOCX, PPTX, JPG, PNG.</p>
-                <span class="btn btn-light btn-small">Upload File</span>
-                <span class="file-name" id="modulFile">Belum ada file dipilih</span>
+                <h3>Modul Ajar</h3>
+                <a href="https://drive.google.com/drive/folders/1MDrS3tvwFeDQQw3JbzdFJcijDao5spMz?usp=drive_link" target="_blank"><span class="btn btn-light btn-small">Lihat Dokumen</span></a>
               </label>
 
-              <label class="upload-box">
-                <input class="upload-input" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.jpeg,.png" data-file-label="mediaFile" />
-                <div class="upload-icon">🖼️</div>
-                <h3>Upload Media Pembelajaran</h3>
-                <p>Drag-and-drop atau klik untuk memilih file. Format: PDF, DOCX, PPTX, gambar.</p>
-                <span class="btn btn-light btn-small">Upload File</span>
-                <span class="file-name" id="mediaFile">Belum ada file dipilih</span>
-              </label>
+            
             </div>
           </div>
         </div>
@@ -1597,8 +1587,7 @@
               </div>
             </div>
             <div class="doc-actions">
-              <a class="btn btn-light" href="#" onclick="alert('Ganti tautan ini dengan file Lampiran 7.'); return false;">Lihat Dokumen</a>
-              <a class="btn btn-primary" href="#" onclick="alert('Ganti tautan unduh ini dengan file Lampiran 7.'); return false;">Unduh</a>
+              <a class="btn btn-light" href="https://drive.google.com/drive/folders/1pLb9jTmQMOWmdlBqKl_MrJO6ex7gk8mc?usp=drive_link" >Lihat Dokumen</a>
             </div>
           </article>
 
@@ -1611,8 +1600,7 @@
               </div>
             </div>
             <div class="doc-actions">
-              <a class="btn btn-light" href="#" onclick="alert('Ganti tautan ini dengan file Lampiran 8.'); return false;">Lihat Dokumen</a>
-              <a class="btn btn-primary" href="#" onclick="alert('Ganti tautan unduh ini dengan file Lampiran 8.'); return false;">Unduh</a>
+              <a class="btn btn-light" href="https://drive.google.com/drive/folders/1pLb9jTmQMOWmdlBqKl_MrJO6ex7gk8mc?usp=drive_link" >Lihat Dokumen</a>
             </div>
           </article>
         </div>
@@ -1663,24 +1651,24 @@
           <article class="timeline-card reveal">
             <div class="timeline-number">1</div>
             <div class="timeline-content card">
-              <h3>Materi yang Telah Dipelajari</h3>
-              <p>Selama PPL Terbimbing, mahasiswa mempelajari perencanaan pembelajaran, pelaksanaan pembelajaran, asesmen formatif dan sumatif, pengelolaan kelas, serta refleksi praktik mengajar.</p>
+              <h3>Apa yang telah mahasiswa pelajari sebagai peserta PPG calon guru selama tahapan PPL Terbimbing dari awal hingga akhir?</h3>
+              <p>Selama PPL Terbimbing, saya mempelajari bagaimana menyusun perangkat pembelajaran seperti modul ajar, media pembelajaran dll. Melalui proses penyusunan perangkat pembelajaran tersebut, saya menyadari bahwa guru perlu merancang pembelajaran yang baik agar bisa mewujudkan pembelajaran yang terarah dan terstruktur. Pada tahap pelaksanaan pembelajaran saya berusaha untuk menerapkan perangkat pembelajaran yang telah disusun ke dalam kegiatan mengajar di kelas.</p>
             </div>
           </article>
 
           <article class="timeline-card reveal">
             <div class="timeline-number">2</div>
             <div class="timeline-content card">
-              <h3>Pengalaman Menantang</h3>
-              <p>Pengalaman menantang muncul saat menyesuaikan strategi pembelajaran dengan kebutuhan peserta didik yang beragam, menjaga keterlibatan kelas, dan mengelola waktu pembelajaran secara efektif.</p>
+              <h3>Apakah terdapat pengalaman yang menantang dan bagaimana solusi dari permasalah tersebut?</h3>
+              <p>Salah satu tantangan yang pernah saya alami adalah ketika menghadapi murid yang kurang percaya diri dan cepat menyerah saat diberikan tugas karena menganggap tugas yang diberikan sulit untuk diselesaikan. Melihat hal tersebut, saya melakukan pendekatan secara personal dan memberikan scaffolding secara bertahap kepada murid yang merasa kesulitan dalam menyelesaikan tugas yang diberikan.</p>
             </div>
           </article>
 
           <article class="timeline-card reveal">
             <div class="timeline-number">3</div>
             <div class="timeline-content card">
-              <h3>Umpan Balik Guru Pamong</h3>
-              <p>Guru Pamong memberikan masukan terkait penguatan pengelolaan kelas, kejelasan instruksi, variasi metode, serta pentingnya membangun komunikasi positif dengan peserta didik.</p>
+              <h3>Apakah umpan balik atau saran konstruktif yang diberikan kepada mahasiswa dalam diskusi refleksi akhir sebagai bentuk perbaikan untuk ke tahap PPL selanjutnya (PPL Mandiri)</h3>
+              <p>Umpan balik atau saran konstruktif yang diberikan yaitu agar mahasiswa lebih meningkatkan kesiapan dalam merancang dan melaksanakan pembelajaran sebelum memasuki tahap PPL Mandiri.</p>
             </div>
           </article>
 
@@ -1699,31 +1687,11 @@
         </div>
 
         <div class="quote-box reveal">
-          <blockquote>Pendidikan bukan hanya menyampaikan materi, tetapi menghadirkan pengalaman belajar yang menumbuhkan potensi, karakter, dan rasa percaya diri peserta didik.</blockquote>
-          <p>Prinsip mengajar yang dipegang adalah pembelajaran berpusat pada peserta didik, inklusif, kontekstual, reflektif, dan memberi ruang bagi setiap peserta didik untuk berkembang sesuai kemampuan serta kebutuhannya.</p>
-        </div>
+          <p align="justify">Wahyu pertama yang diturunkan Allah SWT kepada Nabi Muhammad SAW melalui perantara malaikat Jibril adalah Q.S. Al-‘Alaq (96): 1-5. Ayat pertama berbunyi “<i>Iqra' bismi rabbikalladzî khalaq</i>” yang artinya “Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan”. Ayat ini berisi perintah untuk membaca. Membaca adalah wasilah, perantara, atau cara untuk belajar memahami segala aturan yang dilarang dan diperintahkan, termasuk memahami segala hal yang berkaitan dengan Ke-Esaan Allah SWT sehingga seharusnya kita memiliki kesungguhan dan semangat dalam membaca. Dalam arti lain, “<i>Iqra</i>” memahami kebenaran. Nah, sebagai seorang pendidik tentu kita tahu cara memahami sebuah kebenaran hanya melalu jalur pendidikan yang akan melahirkan pengetahuan-pengetahuan yang bervariasi. Oleh karena itu, tanpa kita sadari Islam sangat menjunjung tinggi pendidikan dan pengetahuan. Berdasarkan ayat tersebut, saya menyadari bahwa setiap individu membutuhkan pendidikan karena pendidikan mempunyai peran yang sangat penting dalam mencetak generasi yang cerdas dan berkarakter.</p><br>
 
-        <div class="value-grid">
-          <article class="value-card card reveal">
-            <div class="icon">🧩</div>
-            <h3>Inklusif</h3>
-            <p>Menghargai keragaman latar belakang, kemampuan, minat, dan gaya belajar.</p>
-          </article>
-          <article class="value-card card reveal">
-            <div class="icon">🌱</div>
-            <h3>Bertumbuh</h3>
-            <p>Mendorong peserta didik untuk belajar dari proses, kesalahan, dan pengalaman.</p>
-          </article>
-          <article class="value-card card reveal">
-            <div class="icon">🤝</div>
-            <h3>Kolaboratif</h3>
-            <p>Membangun interaksi positif antara guru, peserta didik, dan lingkungan sekolah.</p>
-          </article>
-          <article class="value-card card reveal">
-            <div class="icon">✨</div>
-            <h3>Bermakna</h3>
-            <p>Mengaitkan materi dengan kehidupan nyata agar pembelajaran terasa relevan.</p>
-          </article>
+          <p align="justify">Selain itu, pendidikan menurut Ki Hajar Dewantara adalah menuntun segala kodrat yang ada pada anak-anak, agar mereka dapat mencapai keselamatan dan kebahagiaan yang setinggi-tingginya baik sebagai manusia maupun sebagai anggota masyarakat. Anak-anak itu sebagai makhluk, manusia, dan benda hidup, sehingga mereka hidup dan tumbuh menurut kodratnya sendiri. Kita sebagai pendidik hanya dapat menuntun tumbuh atau hidupnya kodrat itu agar dapat berkembang sesuai dengan potensinya masing-masing.</p><br>
+
+          <p align="justify">Sebagai pendidik, saya meyakini bahwa pendidikan merupakan proses memanusiakan manusia yang bertujuan untuk membantu murid dalam mengembangkan seluruh potensi yang dimilikinya baik aspek kognitif, afektif, dan psikomotorik. Ing Ngarso Sung Tulodo, Ing Madya Mangun Karso, dan Tut Wuri Handayani menjadi landasan dalam menjalankan amanah sebagai pendidik yang tidak hanya bertugas menyampaikan materi, tetapi juga menjadi figur yang memberikan contoh sikap positif, membangun semangat belajar, dan memberikan dorongan. Selain itu, sangat penting juga untuk menanamkan, mengembangkan, dan menginternalisasikan pendidikan nilai khususnya nilai-nilai luhur pancasila ke dalam proses pembelajaran untuk menghindari atau meminimalisir terjadinya “degradasi moral” dalam dunia pendidikan. Menjadikan filosofi tersebut sebagai landasan dalam mengajar diharapkan mampu menciptakan pembelajaran yang berpusat pada murid dan mewujudkan pembelajaran yang inklusif untuk setiap anak bangsa.</p><br>
         </div>
       </div>
     </section>
@@ -1749,80 +1717,69 @@
 
         <div class="gallery-grid">
           <article class="gallery-card card reveal" data-category="observasi">
-            <div class="gallery-image" data-title="Kegiatan Observasi Kelas" data-desc="Observasi awal untuk memahami karakteristik peserta didik, suasana kelas, dan strategi pembelajaran yang digunakan guru." data-icon="🔎">
-              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #dbeafe, #bfdbfe);">🔎</div>
+            <div class="gallery-image" data-title="Kegiatan Observasi Kelas" data-desc="Observasi awal untuk memahami karakteristik peserta didik, suasana kelas, dan strategi pembelajaran yang digunakan guru.">
+              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #dbeafe, #bfdbfe);"><img src="galeri1.jpeg"></div>
             </div>
             <div class="gallery-body">
-              <span class="gallery-category">Kegiatan Observasi</span>
-              <h3>Kegiatan Observasi Kelas</h3>
-              <div class="gallery-date">12 Agustus 2026</div>
-              <p>Pengamatan suasana pembelajaran, karakteristik peserta didik, dan kebutuhan belajar di kelas.</p>
-              <button class="btn btn-light btn-small detail-btn" type="button">Lihat Detail</button>
+              <h3>Lapor Diri</h3>
+              <div class="gallery-date">26 Februari 2026</div>
+              <p>Kegiatan lapor diri/penerimaan secara resmi kepada kepala sekolah dan guru pamong di SMK Negeri 3 Makassar yang didampingi secara langsung oleh Dosen Pembimbing Lapangan (DPL) dari Universitas Negeri Makassar.</p>
+              
             </div>
           </article>
 
           <article class="gallery-card card reveal" data-category="praktik">
-            <div class="gallery-image" data-title="Praktik Mengajar Terbimbing" data-desc="Pelaksanaan pembelajaran di kelas dengan perangkat ajar, media, LKPD, dan asesmen yang telah disiapkan." data-icon="🧑‍🏫">
-              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #dcfce7, #bbf7d0);">🧑‍🏫</div>
+            <div class="gallery-image"  data-title="Praktik Mengajar Terbimbing" data-desc="Pelaksanaan pembelajaran di kelas dengan perangkat ajar, media, LKPD, dan asesmen yang telah disiapkan." data-icon="🧑‍🏫">
+              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #dcfce7, #bbf7d0);"><img src="galeri2.jpeg"></div>
             </div>
             <div class="gallery-body">
-              <span class="gallery-category">Praktik Mengajar</span>
-              <h3>Praktik Mengajar Terbimbing</h3>
-              <div class="gallery-date">19 Agustus 2026</div>
-              <p>Pelaksanaan pembelajaran dengan pendekatan aktif dan berpusat pada peserta didik.</p>
-              <button class="btn btn-light btn-small detail-btn" type="button">Lihat Detail</button>
+              <h3>Orientasi</h3>
+              <div class="gallery-date">4 Maret 2026</div>
+              <p>Orientasi dilakukan dengan melakukan wawancara dengan wakil kepala sekolah terkait dengan beberapa bidang.</p>
             </div>
           </article>
 
           <article class="gallery-card card reveal" data-category="pamong">
             <div class="gallery-image" data-title="Diskusi dengan Guru Pamong" data-desc="Diskusi mengenai perencanaan pembelajaran, penguatan strategi mengajar, dan refleksi hasil praktik." data-icon="🤝">
-              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #fef3c7, #fde68a);">🤝</div>
+              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #fef3c7, #fde68a);"><img src="galeri3.jpg"></div>
             </div>
             <div class="gallery-body">
-              <span class="gallery-category">Diskusi Guru Pamong</span>
-              <h3>Diskusi dengan Guru Pamong</h3>
-              <div class="gallery-date">24 Agustus 2026</div>
-              <p>Kegiatan diskusi untuk memperoleh masukan dan saran perbaikan praktik pembelajaran.</p>
-              <button class="btn btn-light btn-small detail-btn" type="button">Lihat Detail</button>
+              <h3>Observasi</h3>
+              <div class="gallery-date">11 Maret 2026</div>
+              <p>Kegiatan observasi bertujuan untuk memahami karakteristik murid sebagai peserta didik dari segi kognitif, sosial-emosional, moral, dan fisik; gaya belajar; perbedaan individu; serta konteks sosial dan budaya. Kegiatan yang dilakukan yaitu merancang instrumen asesmen awal untuk profilling dan observasi lingkungan belajar.</p>
             </div>
           </article>
 
           <article class="gallery-card card reveal" data-category="dpl">
             <div class="gallery-image" data-title="Bimbingan dengan DPL" data-desc="Bimbingan bersama Dosen Pembimbing Lapangan untuk memperkuat perangkat ajar dan refleksi pembelajaran." data-icon="🎓">
-              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #e0e7ff, #c7d2fe);">🎓</div>
+              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #e0e7ff, #c7d2fe);"><img src="Galeri4.jpeg"></div>
             </div>
             <div class="gallery-body">
-              <span class="gallery-category">Bimbingan DPL</span>
-              <h3>Bimbingan dengan DPL</h3>
-              <div class="gallery-date">28 Agustus 2026</div>
-              <p>Penguatan rancangan pembelajaran, asesmen, dan refleksi praktik mengajar.</p>
-              <button class="btn btn-light btn-small detail-btn" type="button">Lihat Detail</button>
+              <h3>Asistensi Mengajar</h3>
+              <div class="gallery-date">9 April 2026</div>
+              <p>Tahapan asistensi berfokus pada kegiatan asistensi mahasiswa untuk membantu Guru Pamong (GP) dalam proses penyusunan profilling peserta didik, perangkat pembelajaran, dan praktik mengajar.</p>
             </div>
           </article>
 
           <article class="gallery-card card reveal" data-category="refleksi">
             <div class="gallery-image" data-title="Kegiatan Refleksi" data-desc="Refleksi bersama untuk mengevaluasi proses pembelajaran dan merumuskan rencana perbaikan." data-icon="💡">
-              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #fae8ff, #f5d0fe);">💡</div>
+              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #fae8ff, #f5d0fe);"><img src="galeri5.jpeg"></div>
             </div>
             <div class="gallery-body">
-              <span class="gallery-category">Kegiatan Refleksi</span>
-              <h3>Kegiatan Refleksi</h3>
-              <div class="gallery-date">2 September 2026</div>
-              <p>Evaluasi pengalaman mengajar, kendala, kekuatan, dan rencana perbaikan berikutnya.</p>
-              <button class="btn btn-light btn-small detail-btn" type="button">Lihat Detail</button>
+              <h3>Pembelajaran Terbimbing</h3>
+              <div class="gallery-date">16 April 2026</div>
+              <p>Kegiatan ini bertujuan untuk mengasah keterampilan mengajar mahasiswa di bawah bimbingan intesif dan arahan dari GP dan DPL.</p>
             </div>
           </article>
 
           <article class="gallery-card card reveal" data-category="sekolah">
             <div class="gallery-image" data-title="Kegiatan Sekolah" data-desc="Keterlibatan dalam kegiatan sekolah sebagai bagian dari pengalaman profesional selama PPG." data-icon="🏫">
-              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #fee2e2, #fecaca);">🏫</div>
+              <div class="gallery-visual" style="--pattern: linear-gradient(135deg, #fee2e2, #fecaca);"><img src="galeri6.jpeg"></div>
             </div>
             <div class="gallery-body">
-              <span class="gallery-category">Kegiatan Sekolah</span>
-              <h3>Kegiatan Sekolah</h3>
-              <div class="gallery-date">7 September 2026</div>
-              <p>Partisipasi dalam kegiatan sekolah untuk memperkuat pengalaman sosial dan profesional.</p>
-              <button class="btn btn-light btn-small detail-btn" type="button">Lihat Detail</button>
+              <h3>Refleksi Akhir</h3>
+              <div class="gallery-date">4 Juni 2026</div>
+              <p>Refleksi akhir bertujuan untuk memberikan ruang bagi mahasiswa untuk mengevaluasi proses praktik pembelajaran terbimbing yang dimulai dari tahap orientasi, observasi, hingga praktik pembelajaran terbimbing.</p>
             </div>
           </article>
         </div>
@@ -1836,7 +1793,7 @@
       <div class="footer-grid">
         <div>
           <h3>E-Portofolio Muhammad Anis Fauzan</h3>
-          <p>Portofolio digital PPG yang memuat profil, artefak pembelajaran, penilaian, refleksi, filosofi mengajar, dan dokumentasi kegiatan.</p>
+          <p>Portofolio digital PPG yang memuat profil, artefak pembelajaran, penilaian, model guru, refleksi, filosofi mengajar, dan dokumentasi kegiatan.</p>
         </div>
         <div>
           <h3>Navigasi</h3>
@@ -1849,13 +1806,12 @@
         </div>
         <div>
           <h3>Kontak</h3>
-          <p>Email: isi-email@contoh.com</p>
-          <p>Program: Pendidikan Profesi Guru</p>
-          <p>Tahun: 2026</p>
+          <p>Nomor HP: 085397627199</p>
+          <p>Email: anisanies152@gmail.com</p>
         </div>
       </div>
       <div class="footer-bottom">
-        © 2026 Muhammad Anis Fauzan - E-Portofolio PPG. Semua data dapat diganti sesuai kebutuhan.
+        Muhammad Anis Fauzan - PPG Calon Guru - Universitas Negeri Makassar
       </div>
     </div>
   </footer>
@@ -1948,7 +1904,7 @@
     });
 
     // Upload file label + drag visual
-    const uploadInputs = document.querySelectorAll(".upload-input");
+    /*const uploadInputs = document.querySelectorAll(".upload-input");
     uploadInputs.forEach(input => {
       const box = input.closest(".upload-box");
       const labelId = input.dataset.fileLabel;
@@ -1973,7 +1929,7 @@
         });
       });
     });
-
+*/
     // Filter dokumentasi
     const filterButtons = document.querySelectorAll(".filter-btn");
     const galleryCards = document.querySelectorAll(".gallery-card");
@@ -2000,37 +1956,37 @@
     const galleryImages = document.querySelectorAll(".gallery-image");
     const detailButtons = document.querySelectorAll(".detail-btn");
 
-    function openModalFromCard(card) {
-      const image = card.querySelector(".gallery-image");
-      const visual = card.querySelector(".gallery-visual");
-      modalTitle.textContent = image.dataset.title;
-      modalDesc.textContent = image.dataset.desc;
-      modalVisual.textContent = image.dataset.icon || "📷";
-      modalVisual.style.setProperty("--pattern", visual.style.getPropertyValue("--pattern"));
-      modal.classList.add("show");
-      document.body.style.overflow = "hidden";
-    }
+    // function openModalFromCard(card) {
+    //   const image = card.querySelector(".gallery-image");
+    //   const visual = card.querySelector(".gallery-visual");
+    //   modalTitle.textContent = image.dataset.title;
+    //   modalDesc.textContent = image.dataset.desc;
+    //   modalVisual.textContent = image.dataset.icon || "📷";
+    //   modalVisual.style.setProperty("--pattern", visual.style.getPropertyValue("--pattern"));
+    //   modal.classList.add("show");
+    //   document.body.style.overflow = "hidden";
+    // }
 
-    galleryImages.forEach(image => {
-      image.addEventListener("click", () => openModalFromCard(image.closest(".gallery-card")));
-    });
+    // galleryImages.forEach(image => {
+    //   image.addEventListener("click", () => openModalFromCard(image.closest(".gallery-card")));
+    // });
 
-    detailButtons.forEach(button => {
-      button.addEventListener("click", () => openModalFromCard(button.closest(".gallery-card")));
-    });
+    // detailButtons.forEach(button => {
+    //   button.addEventListener("click", () => openModalFromCard(button.closest(".gallery-card")));
+    // });
 
-    function closeModal() {
-      modal.classList.remove("show");
-      document.body.style.overflow = "";
-    }
+    // function closeModal() {
+    //   modal.classList.remove("show");
+    //   document.body.style.overflow = "";
+    // }
 
-    modalClose.addEventListener("click", closeModal);
-    modal.addEventListener("click", event => {
-      if (event.target === modal) closeModal();
-    });
-    window.addEventListener("keydown", event => {
-      if (event.key === "Escape" && modal.classList.contains("show")) closeModal();
-    });
+    // modalClose.addEventListener("click", closeModal);
+    // modal.addEventListener("click", event => {
+    //   if (event.target === modal) closeModal();
+    // });
+    // window.addEventListener("keydown", event => {
+    //   if (event.key === "Escape" && modal.classList.contains("show")) closeModal();
+    // });
 
     // Animasi saat scroll
     const revealElements = document.querySelectorAll(".reveal");
